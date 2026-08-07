@@ -109,3 +109,90 @@ while program_running:
         print("Invalid response. Please enter Yes or No.")
 
 
+print("\n" + "=" * 50)
+print("FRESHMART DAILY CASHIER REPORT")
+print("=" * 50)
+
+
+# Calculate Sarah's average
+if transaction_counts[0] > 0:
+    cashier_1_average: float = (
+        sales_totals[0] / transaction_counts[0]
+    )
+else:
+    cashier_1_average = 0.0
+
+
+print(f"\nCASHIER 1: {cashier_names[0]}")
+print(
+    f"Transactions Processed: {transaction_counts[0]}"
+)
+print(f"Total Sales: ₦{sales_totals[0]:,.2f}")
+print(
+    f"Average Transaction: ₦{cashier_1_average:,.2f}"
+)
+print("-" * 50)
+
+
+# Calculate David's average
+if transaction_counts[1] > 0:
+    cashier_2_average: float = (
+        sales_totals[1] / transaction_counts[1]
+    )
+else:
+    cashier_2_average = 0.0
+
+
+print(f"\nCASHIER 2: {cashier_names[1]}")
+print(
+    f"Transactions Processed: {transaction_counts[1]}"
+)
+print(f"Total Sales: ₦{sales_totals[1]:,.2f}")
+print(
+    f"Average Transaction: ₦{cashier_2_average:,.2f}"
+)
+print("-" * 50)
+
+
+# Calculate Grace's average
+if transaction_counts[2] > 0:
+    cashier_3_average: float = (
+        sales_totals[2] / transaction_counts[2]
+    )
+else:
+    cashier_3_average = 0.0
+
+
+print(f"\nCASHIER 3: {cashier_names[2]}")
+print(
+    f"Transactions Processed: {transaction_counts[2]}"
+)
+print(f"Total Sales: ₦{sales_totals[2]:,.2f}")
+print(
+    f"Average Transaction: ₦{cashier_3_average:,.2f}"
+)
+print("-" * 50)
+
+
+# Calculate the supermarket's average transaction
+if total_transactions > 0:
+    supermarket_average: float = (
+        total_sales / total_transactions
+    )
+else:
+    supermarket_average = 0.0
+
+
+print("\n" + "=" * 50)
+print("OVERALL SUPERMARKET REPORT")
+print("=" * 50)
+
+print(f"\nTotal Transactions: {total_transactions}")
+print(f"Total Daily Sales: ₦{total_sales:,.2f}")
+print(
+    f"Average Transaction: ₦{supermarket_average:,.2f}"
+)
+
+print("\n" + "=" * 50)
+print("END OF BUSINESS DAY")
+print("=" * 50)
